@@ -1,0 +1,14 @@
+# MacOS spezifische Dateien
+.DS_Store
+
+# Windows spezifische Dateien
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PlatformIO
+.pio/
+*.pyc
