@@ -18,10 +18,21 @@ require "graphics"
  --toliss_airbus/lightcommands/NoseLightDown
 -- toliss_airbus/lightcommands/NoseLightUp
 
-dataref("StrobeLight", "AirbusFBW/StrobeLight", "writable")
-dataref("StrobeLightSwitch", "AirbusFBW/StrobeLightSwitch", "writable")
+dataref("StrobeLightUp", "toliss_airbus/lightcommands/StrobeLightUp", "writable")
+dataref("StrobeLightDown", "toliss_airbus/lightcommands/StrobeLightDown", "writable")
 
 
+
+--initial settings
+StrobelightsDown=1
+StrobelightsDown=0
+StrobelightsDown=1
+StrobelightsDown=0
+
+
+
+
+local StrobeLight_Status=0
 --local com1_queue1=COM1_active
 
 
@@ -78,17 +89,29 @@ function little_radio_mouse_click_events()
 
     
 	if MOUSE_X >= interface_x and MOUSE_X <= interface_x + interface_width and
-       MOUSE_Y >= interface_y  and MOUSE_Y <= interface_y + interface_height then
-       com_toggle=COM1_active
-	   COM1_active= COM1
-		
-	   COM1 = com_toggle
+       MOUSE_Y >= interface_y  and MOUSE_Y <= interface_y + (interface_height/2) then
+       StrobelightsDown = 1
+       StrobelightsDown = 0
 	   
         
 
         -- Mausereignis beenden
         RESUME_MOUSE_CLICK = true
     end
+
+	if MOUSE_X >= interface_x and MOUSE_X <= interface_x + interface_width and
+       MOUSE_Y >= interface_y + (interface_height/2) and MOUSE_Y <= interface_y + interface_height then
+       StrobelightsUp = 1
+       StrobelightsUp = 0
+	   
+        
+
+        -- Mausereignis beenden
+        RESUME_MOUSE_CLICK = true
+    end
+
+
+
 
 end
 
