@@ -9,19 +9,19 @@ dataref("COM1_active", "sim/cockpit2/radios/actuators/com1_frequency_hz_833", "w
 local com1_queue1=COM1_active
 local com1_queue3=COM1_active
 
-local com1_fix1="129525"
+local com1_fix1=129525--"129525"
 local com1_fix1_name="München Rad"
 
-local com1_fix2="126175"
+local com1_fix2=126175--"126175"
 local com1_fix2_name="München Rad (APP S)"
 
-local com1_fix3="120840"
+local com1_fix3=120840--"120840"
 local com1_fix3_name="Leipzig Arr S"
 
-local com1_fix4="121105"
+local com1_fix4=121105--"121105"
 local com1_fix4_name="Leipzig Twr S"
 
-local com1_fix5="121805"
+local com1_fix5=121805--"121805"
 local com1_fix5_name="Leipzig Gnd"
 
 local com_toggle
