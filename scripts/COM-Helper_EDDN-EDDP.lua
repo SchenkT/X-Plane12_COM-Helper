@@ -66,9 +66,9 @@ function draw_little_radio()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y + 25, "Standby")
+    draw_string_Helvetica_12(interface_x + 10, interface_y + 30, "Standby")
     draw_string_Helvetica_18(interface_x + 10, interface_y + 5, string.format("%3.3f", COM1 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5, COM1_STATION_NAME)
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5, COM1_STATION_NAME)
 end
 
 function draw_little_radio2()
@@ -96,9 +96,9 @@ function draw_little_radio2()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y +offset_queue1+ 25, "Variable 1")
+    draw_string_Helvetica_12(interface_x + 10, interface_y +offset_queue1+ 30, "Variable 1")
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_queue1+ 05, string.format("%3.3f", com1_queue1 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_queue1, "")
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5+offset_queue1, "")
 end
 
 function draw_little_radio3()
@@ -126,9 +126,9 @@ function draw_little_radio3()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y +offset_queue3+ 325, "Variable 2")
+    draw_string_Helvetica_12(interface_x + 10, interface_y +offset_queue3+ 30, "Variable 2")
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_queue3+ 05, string.format("%3.3f", com1_queue3 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_queue3, "")
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5+offset_queue3, "")
 end
 
 
@@ -157,9 +157,9 @@ function draw_little_radio_fix1()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix1+ 25, com1_fix1_name)
+    draw_string_Helvetica_12(interface_x + 10, interface_y +offset_fix1+ 30, com1_fix1_name)
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix1+ 05, string.format("%3.3f", com1_fix1 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_fix1, "")
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5+offset_fix1, "")
 end
 
 function draw_little_radio_fix2()
@@ -187,9 +187,9 @@ function draw_little_radio_fix2()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix2+ 25, com1_fix2_name)
+    draw_string_Helvetica_12(interface_x + 10, interface_y +offset_fix2+ 30, com1_fix2_name)
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix2+ 05, string.format("%3.3f", com1_fix2 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_fix2, "")
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5+offset_fix2, "")
 end
 
 function draw_little_radio_fix3()
@@ -217,9 +217,9 @@ function draw_little_radio_fix3()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix3+ 25, com1_fix3_name)
+    draw_string_Helvetica_12(interface_x + 10, interface_y +offset_fix3+ 30, com1_fix3_name)
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix3+ 05, string.format("%3.3f", com1_fix3 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_fix3, "")
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5+offset_fix3, "")
 end
 
 function draw_little_radio_fix4()
@@ -247,9 +247,9 @@ function draw_little_radio_fix4()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix4+ 325, com1_fix4_name)
+    draw_string_Helvetica_12(interface_x + 10, interface_y +offset_fix4+ 30, com1_fix4_name)
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix4+ 05, string.format("%3.3f", com1_fix4 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_fix4, "")
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5+offset_fix4, "")
 end
 
 function draw_little_radio_fix5()
@@ -277,9 +277,9 @@ function draw_little_radio_fix5()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix5+ 25, com1_fix5_name)
+    draw_string_Helvetica_12(interface_x + 10, interface_y +offset_fix5+ 30, com1_fix5_name)
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_fix5+ 05, string.format("%3.3f", com1_fix5 / 1000))
-    --draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_fix5, "")
+    --draw_string_Helvetica_12(interface_x + 10, interface_y + 5+offset_fix5, "")
 end
 
 
