@@ -8,5 +8,18 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "Lua.runtime.version": "Lua 5.4",
-  "Lua.diagnostics.globals": ["love"]
+  "Lua.diagnostics.globals": [
+    "dataref",
+    "XPLM",
+    "draw_string",
+    "graphics",
+    "mouseclick",
+    "mousewheel",
+    "do_every_frame",
+    "require"
+  ],
+  "Lua.workspace.library": [
+    "./libs"
+  ],
+  "Lua.diagnostics.disable": ["lowercase-global"]
 }
