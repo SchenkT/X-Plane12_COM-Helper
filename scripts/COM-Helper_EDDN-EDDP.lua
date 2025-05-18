@@ -66,7 +66,7 @@ function draw_little_radio()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_10(interface_x + 10, interface_y + 35, "COM1 -STBY")
+    draw_string_Helvetica_10(interface_x + 10, interface_y + 35, "Standby")
     draw_string_Helvetica_18(interface_x + 10, interface_y + 15, string.format("%3.3f", COM1 / 1000))
     draw_string_Helvetica_10(interface_x + 10, interface_y + 5, COM1_STATION_NAME)
 end
@@ -96,7 +96,7 @@ function draw_little_radio2()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_10(interface_x + 10, interface_y +offset_queue1+ 35, "COM1 - Queue")
+    draw_string_Helvetica_10(interface_x + 10, interface_y +offset_queue1+ 35, "Variable 1")
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_queue1+ 15, string.format("%3.3f", com1_queue1 / 1000))
     draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_queue1, "")
 end
@@ -126,7 +126,7 @@ function draw_little_radio3()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_10(interface_x + 10, interface_y +offset_queue3+ 35, "COM1 - Queue")
+    draw_string_Helvetica_10(interface_x + 10, interface_y +offset_queue3+ 35, "Variable 2")
     draw_string_Helvetica_18(interface_x + 10, interface_y +offset_queue3+ 15, string.format("%3.3f", com1_queue3 / 1000))
     draw_string_Helvetica_10(interface_x + 10, interface_y + 5+offset_queue3, "")
 end
