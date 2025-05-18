@@ -10,26 +10,27 @@
 
 require "graphics"
 
+--AirbusFBW/StrobeLight 
+--AirbusFBW/StrobeLightSwitch
+
+--toliss_airbus/lightcommands/StrobeLightDown
+-- toliss_airbus/lightcommands/StrobeLightUp
+ --toliss_airbus/lightcommands/NoseLightDown
+-- toliss_airbus/lightcommands/NoseLightUp
+
+dataref("StrobeLight", "AirbusFBW/StrobeLight", "writable")
+dataref("StrobeLightSwitch", "AirbusFBW/StrobeLightSwitch", "writable")
 
 
+--local com1_queue1=COM1_active
 
-dataref("COM1", "sim/cockpit2/radios/actuators/com1_standby_frequency_hz_833", "writable")
-dataref("COM1_POWER", "sim/cockpit2/radios/actuators/com1_power", "writable")
-
-dataref("COM1_active", "sim/cockpit2/radios/actuators/com1_frequency_hz_833", "writable")
-
-local com1_queue1=COM1_active
-local com1_queue3=COM1_active
-
-local com1_fix1=129525--"129525"
-local com1_fix1_name="München Rad"
 
 
 -- Bildschirmgröße
-local interface_width = 150 
+local interface_width = 500 
 local interface_height = 50
-local interface_x = SCREEN_WIDTH - interface_width-50
-local interface_y = 0+100
+local interface_x = 200--SCREEN_WIDTH - interface_width-50
+local interface_y = SCREEN_HIGHT - interface_height-100--0+100
 
 
 function draw_little_radio()
@@ -41,7 +42,7 @@ function draw_little_radio()
     graphics.draw_rectangle(interface_x, interface_y, interface_x + interface_width, interface_y + interface_height)
 
     -- Power-Indikator zeichnen
-    if COM1_POWER == 0 then
+    if StrobeLight == 0 then
         graphics.set_color(0.5, 0, 0, 0.8)  -- Rot bei AUS
     else
         graphics.set_color(0, 1, 0, 0.8)    -- Grün bei EIN
@@ -57,8 +58,12 @@ function draw_little_radio()
 
     -- Text anzeigen
     graphics.set_color(1, 1, 1, 1)
-    draw_string_Helvetica_12(interface_x + 10, interface_y + 30, "Standby")
-    draw_string_Helvetica_18(interface_x + 10, interface_y + 5, string.format("%3.3f", COM1 / 1000))
+    draw_string_Helvetica_12(interface_x + 10, interface_y + 30, "StrobeLight")
+    draw_string_Helvetica_18(interface_x + 10, interface_y + 5, string.format("%1.0f", StrobeLight ))
+    
+    draw_string_Helvetica_12(interface_x + 200, interface_y + 30, "StrobeLightSwitch")
+    draw_string_Helvetica_18(interface_x + 200, interface_y + 5, string.format("%1.0f", StrobeLightSwitch ))
+
     --draw_string_Helvetica_12(interface_x + 10, interface_y + 5, COM1_STATION_NAME)
 end
 
