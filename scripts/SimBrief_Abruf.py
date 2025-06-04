@@ -1,9 +1,7 @@
 import requests
 
 # ⇨ DEIN SIMBRIEF BENUTZERNAME HIER EINTRAGEN
-SIMBRIEF_USERNAME = (
-    "thomas_simb"  # <- z. B. "flythom" oder dein echter SimBrief-Nutzername
-)
+SIMBRIEF_USERNAME = "174902"  # <- z. B. "flythom" oder dein echter SimBrief-Nutzername
 
 # ⇨ Ziel-Dateiname im aktuellen Verzeichnis
 output_filename = "simbrief_flightplan.json"
